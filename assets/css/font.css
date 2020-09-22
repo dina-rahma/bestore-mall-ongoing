@@ -1,0 +1,32 @@
+@font-face {
+    font-family: SF-Compact-Black;
+    src: url(../font/SF-Compact/Fonts/SF-Compact-Display-Black.otf);
+}
+
+@font-face{
+    font-family: SF-Compact-Bold;
+    src: url(../font/SF-Compact/Fonts/SF-Compact-Display-Semibold.otf);
+}
+@font-face{
+    font-family: SF-Compact-Reguler;
+    src: url(../font/SF-Compact/Fonts/SF-Compact-Display-Regular.otf);
+}
+
+@font-face{
+    font-family: SF-Compact-Ultralight;
+    src: url(../font/SF-Compact/Fonts/SF-Compact-Display-Ultralight.otf);
+}
+
+@font-face{
+    font-family: NewYorkLarge-Regular;
+    src: url(../font/New-York/NewYorkLarge-RegularItalic.otf);
+}
+
+@font-face{
+    font-family: NewYorkLarge-Black;
+    src: url(../font/New-York/NewYorkLarge-Black.otf);
+}
+@font-face{
+    font-family: NewYorkMedium-Regular;
+    src: url(../font/New-York/NewYorkMedium-Regular.otf);
+}

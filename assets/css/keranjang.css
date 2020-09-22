@@ -1,0 +1,288 @@
+:root {
+    --putih: #FFFF;
+    --kuning: #F9C032;
+    --hijau: #46715E;
+    --SF-Compact-Black : SF-Compact-Black;
+    --SF-Compact-Blod : SF-Compact-Bold;
+    --SF-Compact-Ultralight : SF-Compact-Ultralight;
+    --NewYorkLarge-Regular : NewYorkLarge-Regular;
+    --NewYorkLarge-Black : NewYorkLarge-Black;
+    --NewYorkMedium-Regular : NewYorkMedium-Regular;
+}
+
+.c-k{color: var(--kuning);} .c-h{color: var(--hijau);}
+
+h4{
+    font-family: var(--SF-Compact-Black);
+    color: var(--hijau);
+}
+
+h5{
+    font-family: var(--SF-Compact-Blod);
+}
+
+h6{
+    font-family: var(--SF-Compact-Black);
+    color: var(--putih);
+}
+
+
+
+.d-keranjang .nav-top{
+    background-color: var(--putih) !important;
+    padding: 0px !important;
+    z-index: 997;
+    transition: 1000ms;
+}
+
+.d-keranjang .nav-top.active{
+    transition: 1000ms;
+    background-color: var(--putih) !important;
+}
+
+.d-keranjang .nav-top h5{
+    font-family: var(--SF-Compact-Black) !important;
+
+}
+
+
+/* Button */
+.btn-beli{
+    width: 100%;
+    background-color: var(--kuning);
+    color: var(--putih);
+}
+.btn-delete{
+    width: 40px;
+    background-color: var(--kuning);
+    border-radius: 100px !important;
+    height:40px ;
+}
+
+.deskripsi-produk .input-group btn{
+    padding: 0px !important;
+}
+.btn-number{
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    padding: 0px !important;
+}
+.d-keranjang .notif svg{
+    fill:var(--hijau) !important;
+}
+.d-keranjang .btn-bar {
+    color: var(--hijau);
+}
+.d-keranjang .btn-bar:hover{
+    color: var(--hijau);
+}
+.d-keranjang .btn-bar:active{
+    color: var(--hijau);
+}
+
+.btn-addcart{
+    color: var(--putih);
+    background-color: var(--kuning);
+    width: 100%;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+.btn-checkout{
+    color: var(--putih);
+    background-color: var(--hijau);
+    width: 100%;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+/* Button */
+
+
+/* Profil Toko */
+
+.toko{
+    line-height: 1px !important;
+}
+
+.toko .frame-img{
+    box-shadow: 0.1rem 0.1rem 0.1rem #7777;
+    border-radius: 100px;
+    overflow: hidden;
+}
+
+.toko p{
+    font-size: 10px !important;
+}
+
+.produk-toko .frame-img{
+    border: 1px solid var(--kuning);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.produk-toko p{
+    font-size: 12px !important;
+}
+
+.produk-toko .deskripsi-produk{
+    padding: 0px !important;
+    margin: 0px !important;
+    line-height: 10px;
+}
+
+.deskripsi-produk span{
+    font-family: var(--SF-Compact-Ultralight);
+}
+
+.deskripsi-produk span .input-group{
+    width: 100%;
+}
+
+.deskripsi-produk input{
+    border: 1px solid var(--kuning) !important;
+    width: 1px !important;
+    padding: 0px !important;
+    text-align: center;
+    margin: 0px 3px !important;
+}
+
+.control-qty{
+    width: 100% !important;
+    background-color: var(--kuning) !important;
+}
+
+.d-profil{
+    padding-top: 0px;
+}
+
+.data-patner .nama-toko{
+    /* line-height: 0px; */
+}
+
+.data-patner span{
+    font-size: 10px;
+}
+
+
+.store-nav{
+    padding: 0px 2px;
+}
+.store-nav .btn-store{
+    border-bottom: 3px solid #777;
+    padding: 0px;
+
+}
+.data-patner .col-6{
+    padding:0px !important;
+}
+.store-nav.active .btn-store{
+    border-bottom: 3px solid var(--hijau);
+}
+/* Profil Toko */
+
+/* CheckBox */
+/* The container */
+.c-checkout {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 0px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .c-checkout input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: -12px;
+    left: 10px;
+    height: 25px;
+    width: 25px;
+    background-color: transparent;
+    border: 1px solid #777;
+    border-radius: 7px;
+}
+
+/* On mouse-over, add a grey background color */
+.c-checkout:hover input ~ .checkmark {
+    border: 1px solid var(--hijau);
+    background-color: #F6F6F6;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .c-checkout input:checked ~ .checkmark {
+    background-color: var(--hijau);
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .c-checkout input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .c-checkout .checkmark:after {
+    left: 9px;
+    top: 6px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--putih);
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+/* CheckBox */
+
+/* Delete */
+.produk-toko1.hide{
+    display: none;
+}
+/* Delete */
+/* Subtotal */
+.subtotal a{
+    color: var(--putih);
+}
+.subtotal{
+    padding: 10px 0px;
+    margin-bottom: 10px;
+    border-bottom: 2px solid var(--hijau);
+}
+.subtotal h5{
+    line-height: 15px;
+}
+
+.d-keranjang .bar-menu{
+    border: 1px solid #7777;
+}
+/* Subtotal */
+
+/* Produk */
+.d-keranjang .product{
+    padding: 20px 0px;
+    background-color: #F4F4F4;
+    margin-bottom: 120px !important;
+}
+/* Produk */

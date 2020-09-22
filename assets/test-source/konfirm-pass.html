@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Cara Membuat Validasi Perulangan Password Dengan jQuery</title>
+</head>
+<style>
+#form{
+width: 30%;
+padding: 10px;
+margin:auto;
+border:1px solid #111;	
+}
+.password{
+margin:10px;	
+}	
+.ulangpassword{
+margin:10px;	
+}	
+.submit{
+margin:10px;	
+}
+.text-success{
+color:green;	
+}
+.text-danger{
+color:red;	
+}
+h5{
+padding: 3px;
+margin:0;	
+}
+</style>
+<body>
+<div id="form">
+<form action="" method="POST">
+<div class="password">
+<input type="password" name="password" id="password">
+</div>
+<div class="ulangpassword">
+<input type="password" name="ulangpassword" id="ulangpassword" oninput="cekPass()">	
+<label class="pesan"></label>	
+</div>
+<input type="submit" class="submit" id="submit" value="Submit">
+</div>
+</form>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript">
+    document.getElementById("submit").disabled = true;
+    function cekPass() {
+        var password = document.getElementById("password").value;
+        var confirmPassword = document.getElementById("ulangpassword").value;
+        if (password != confirmPassword) {
+        	document.getElementById("submit").disabled = true;
+            $('.pesan').html('<h5 class="text-danger"> Password tidak sesuai ! </h5>');
+            return false;
+        }
+        document.getElementById("submit").disabled = false;
+        $('.pesan').html('<h5 class="text-success"> Password sesuai ! </h5>');
+        return true;
+    }
+</script>
+ 
+</html>

@@ -1,0 +1,112 @@
+:root {
+    --putih: #FFFF;
+    --kuning: #F9C032;
+    --hijau: #46715E;
+    --SF-Compact-Black : SF-Compact-Black;
+    --SF-Compact-Blod : SF-Compact-Bold;
+    --SF-Compact-Ultralight : SF-Compact-Ultralight;
+    --NewYorkLarge-Regular : NewYorkLarge-Regular;
+    --NewYorkLarge-Black : NewYorkLarge-Black;
+    --NewYorkMedium-Regular : NewYorkMedium-Regular;
+}
+
+.c-k{color: var(--kuning);}.c-h{color: var(--hijau);}
+
+h4{
+    font-family: var(--SF-Compact-Black);
+    color: var(--hijau);
+}
+
+h5{
+    font-size: 18px !important;
+    font-family: var(--SF-Compact-Ultralight);
+    color: var(--hijau);
+}
+
+h6{
+    font-family: var(--SF-Compact-Black);
+    color: var(--hijau) !important;
+}
+
+.d-official-product .nav-top{
+    background-color: var(--putih) !important;
+    padding: 0px !important;
+    z-index: 997;
+    transition: 1000ms;
+}
+
+.d-official-product .nav-top.active{
+    transition: 1000ms;
+    background-color: var(--putih) !important;
+}
+
+
+/* Button */
+.d-official-product .notif svg{
+    fill:var(--hijau) !important;
+}
+.d-official-product .btn-bar {
+    color: var(--hijau);
+}
+.d-official-product .btn-bar:hover{
+    color: var(--hijau);
+}
+.d-official-product .btn-bar:active{
+    color: var(--hijau);
+}
+
+.btn-wishlist, .btn-cart{
+    z-index: 996;
+}
+/* Button */
+
+/* Card Feed */
+.feed-card{
+    border-top: 1px solid #7777;
+    /* border-bottom: 1px solid #777; */
+    margin-bottom:30px;
+    padding: 0px;
+    overflow: hidden;
+}
+.head-feed {
+    /* background-color: var(--kuning); */
+    padding: 4px 0px;
+}
+.body-feed {
+    border: none !important;
+    padding: 0px !important;
+    background-color: var(--hijau);
+}
+.t-produk{
+    font-family: var(--SF-Compact-Ultralight);
+    font-size: 10px;
+}
+.nama-toko{
+    line-height: 1px !important;
+    /* background-color: var(--kuning); */
+    padding: 0px !important;
+}
+
+.d-nama-toko .img-toko{
+    padding: 0px !important;
+}
+
+.d-nama-toko .frame-logo{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    overflow: hidden;
+    padding: 0px !important;
+}
+
+.foot-head .deskripsi p{
+    line-height: 20px !important;
+    font-size: 14px;
+}
+/* Card Feed */
+
+
+
+
+
+

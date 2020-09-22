@@ -1,0 +1,169 @@
+:root {
+    --putih: #FFFF;
+    --kuning: #F9C032;
+    --hijau: #46715E;
+    --SF-Compact-Black : SF-Compact-Black;
+    --SF-Compact-Blod : SF-Compact-Bold;
+    --SF-Compact-Ultralight : SF-Compact-Ultralight;
+    --NewYorkLarge-Regular : NewYorkLarge-Regular;
+    --NewYorkLarge-Black : NewYorkLarge-Black;
+    --NewYorkMedium-Regular : NewYorkMedium-Regular;
+}
+
+body{
+    background-color: #F4F4F4 !important;
+}
+
+.c-k{color: var(--kuning);} .c-h{color: var(--hijau);}
+
+h4{
+    font-family: var(--SF-Compact-Black);
+    color: var(--hijau);
+}
+
+h5{
+    font-family: var(--SF-Compact-Blod);
+}
+
+h6{
+    font-family: var(--SF-Compact-Ultralight);
+    color: var(--hijau);
+    margin: 0px;
+}
+
+
+
+.d-checkout .nav-top{
+    background-color: var(--putih) !important;
+    padding: 0px !important;
+    z-index: 997;
+    transition: 1000ms;
+}
+
+.d-checkout .nav-top.active{
+    transition: 1000ms;
+    background-color: var(--putih) !important;
+}
+
+.d-checkout .nav-top h5{
+    font-family: var(--SF-Compact-Black) !important;
+
+}
+
+
+
+/* Button */
+
+
+/* Button */
+
+
+/* Informasi Pengiriman */
+.data-card{
+    margin-top: 10px;
+    background-color: var(--putih);
+    padding: 20px 0px;
+    box-shadow: 0.2rem 0rem 0.4rem #7777;
+}
+.head{
+    border-bottom: 2px solid var(--kuning);
+}
+
+.judul{
+    font-family: var(--SF-Compact-Blod);
+    font-size: 12px !important;
+}
+.data-u{
+    font-family: var(--SF-Compact-Ultralight);
+    font-size: 12px;
+}
+
+.card-all{
+    overflow: hidden;
+}
+/* Informasi Pengiriman */
+/* Kurir */
+.dropdown select{
+    height: 30px !important;
+    font-size: 10px;
+}
+/* Kurir */
+
+/* BUtton */
+.btn-bayar{
+    background-color: var(--hijau) !important;
+    font-size: 12px;
+    width: 100%;
+    color: var(--putih);
+}
+.btn-salin{
+    font-family: var(--SF-Compact-Blod);
+    width: 100%;
+    background-color: var(--putih);
+    border-radius: 6px;
+    color: #777;
+    border: 1px solid var(--kuning);
+}
+
+.btn-pricing{
+    width: 100%;
+    background-color: var(--kuning) !important;
+    color: #fff !important;
+    font-family: var(--SF-Compact-Blod);
+    font-size: 14px;
+}
+/* BUtton */
+
+/* Alert */
+.alert-waktu{
+    padding: 0px;
+}
+
+.alert-tegang{
+    background-color: var(--kuning);
+}
+
+.text-waktu{
+    font-size: 10px;
+    color: var(--putih);
+}
+/* Alert */
+
+/* card Pembayaran */
+.card-pembayaran{
+    background-color: var(--putih);
+    padding-top: 5px;
+}
+
+.no-rek
+{
+    padding: 0px 10px 0px 0px;
+}
+
+.card-rekening{
+    border-bottom: 1px solid var(--kuning);
+    padding: 0px 0px 15px 0px;
+    
+}
+/* card Pembayaran */
+
+/* Modal */
+.form-control-file {
+    position: absolute;
+    /* width: 50px;
+    height: 50px; */
+    top: -2px;
+    z-index: 100;
+    opacity: 0;
+    /* display: none; */
+}
+
+.preview-b-p{
+    /* padding: 10vh; */
+    border: #b3b3b3 4px dashed;    
+}
+/* Modal */
+
+
+
+

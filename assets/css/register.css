@@ -1,0 +1,118 @@
+/* Kuning B #ED931D */
+:root {
+    --putih: #FFFF;
+    --kuning: #F9C032;
+    --hijau: #46715E;
+    --SF-Compact-Black : SF-Compact-Black;
+    --SF-Compact-Blod : SF-Compact-Bold;
+    --SF-Compact-Ultralight : SF-Compact-Ultralight;
+    --NewYorkLarge-Regular : NewYorkLarge-Regular;
+    --NewYorkLarge-Black : NewYorkLarge-Black;
+    --NewYorkMedium-Regular : NewYorkMedium-Regular;
+}
+
+body{
+    /* background-color: #F4F4F4 !important; */
+    background-image: url(../img/svg/bg/background-login.svg) !important;
+    background-size: 60vh !important;
+    background-repeat: no-repeat !important;
+    background-position: 70px -60px !important;
+    background-color: var(--kuning) !important;
+    overflow: hidden !important;
+}
+
+.c-k{color: var(--kuning);} 
+.c-h{color: var(--hijau);}
+
+h4{
+    font-family: var(--SF-Compact-Black);
+    color: var(--hijau);
+}
+
+h5{
+    font-family: var(--SF-Compact-Blod);
+}
+
+h6{
+    font-family: var(--SF-Compact-Ultralight);
+    color: var(--hijau);
+    margin: 0px;
+}
+
+/* Login */
+
+.d-register .form-register{
+    position: absolute;
+    top: 25vh;
+    font-family: var(--SF-Compact-Ultralight);
+}
+.d-register input{
+    background-color: transparent;
+    color: var(--putih) !important;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+    border-bottom: 2px solid var(--putih) !important;
+}
+.d-register input:focus{
+    background-color: transparent;
+    color: var(--putih) !important;
+}
+.d-register input::-webkit-input-placeholder{
+    background-color: transparent;
+    color: var(--putih) !important;
+}
+.d-register input:-moz-input-placeholder{
+    background-color: transparent;
+    color: var(--putih) !important;
+}
+
+.text-bawah{
+    color: var(--putih);
+}
+
+.text-bawah a{
+    color: var(--hijau);
+}
+
+.d-alert{
+    display: none;
+}
+.d-alert.active{
+    display: flex;
+}
+
+.pesan-password{
+    font-family: var(--SF-Compact-Ultralight);
+    font-size: 18px;
+    margin-top: 10px;
+}
+.pesan-password .text-danger{
+    color: rgb(221, 59, 59) !important;
+}
+.pesan-password .text-success{
+    color: var(--hijau) !important;
+}
+/* register */
+
+
+
+
+/* Button */
+.btn-register{
+    width: 60%;
+    border-radius: 7px;
+    background-color: var(--putih);
+    color: var(--hijau);
+    font-family: var(--SF-Compact-Blod);
+    box-shadow: 0.1rem 0.2rem 0.4rem #7777;
+}
+/* Button */
+
+
+
+
+
+
+

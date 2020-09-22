@@ -1,0 +1,173 @@
+:root {
+    --putih: #FFFF;
+    --kuning: #E5A72E;
+    --hijau: #46715E;
+    --SF-Compact-Black : SF-Compact-Black;
+    --SF-Compact-Blod : SF-Compact-Bold;
+    --SF-Compact-Ultralight : SF-Compact-Ultralight;
+    --NewYorkLarge-Regular : NewYorkLarge-Regular;
+    --NewYorkLarge-Black : NewYorkLarge-Black;
+    --NewYorkMedium-Regular : NewYorkMedium-Regular;
+}
+
+.c-k{color: var(--kuning);}.c-h{color: var(--kuning);}
+
+h4{
+    font-family: var(--SF-Compact-Black);
+    color: var(--hijau);
+}
+
+h5{
+    font-size: 18px !important;
+    font-family: var(--SF-Compact-Ultralight);
+    color: var(--hijau);
+}
+
+h6{
+    font-family: var(--SF-Compact-Black);
+    color: var(--putih);
+}
+
+.d-toko-patner .nav-top{
+    background-color: transparent !important;
+    padding: 0px !important;
+    z-index: 997;
+    transition: 1000ms;
+}
+
+.d-toko-patner .nav-top.active{
+    transition: 1000ms;
+    background-color: var(--putih) !important;
+}
+
+
+/* Button */
+.d-toko-patner .notif svg{
+    fill:var(--hijau) !important;
+}
+.d-toko-patner .btn-bar {
+    color: var(--hijau);
+}
+.d-toko-patner .btn-bar:hover{
+    color: var(--hijau);
+}
+.d-toko-patner .btn-bar:active{
+    color: var(--hijau);
+}
+
+.btn-follow{
+    background-color: var(--putih);
+    border: 2px solid var(--hijau);
+    width: 100%;
+    font-size: 8px;
+    border-radius: 2px;
+    padding: 2px;
+}
+/* Button */
+
+/* Search */
+.d-toko-patner .search input{
+    font-size: 16px;
+    padding: 10px;
+    border-top-left-radius: 40px !important;
+    border-bottom-left-radius: 40px !important;
+    /* border: 2px solid #777 !important; */
+    border-top: 2px solid #777 !important;
+    border-bottom: 2px solid #777 !important;
+    border-left: 2px solid #777 !important;
+}
+.d-toko-patner .search .input-group-text{
+    background-color: var(--putih);
+    border-top-right-radius: 40px !important;
+    border-bottom-right-radius: 40px !important;
+    border-right: 2px solid #777 ;
+    border-top: 2px solid #777 ;
+    border-left: none;
+    border-bottom: 2px solid #777 ;
+}
+/* Search */
+
+/* Profil Toko */
+.profil-toko{
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.profil-toko .frame-img{
+    box-shadow: 0.1rem 0.3rem 0.3rem #7777;
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.d-profil{
+    padding-top: 30px;
+}
+
+.data-patner span{
+    font-size: 10px;
+}
+
+.store-nav{
+    padding: 0px 2px;
+}
+.store-nav .btn-store{
+    border-bottom: 3px solid #777;
+    padding: 0px;
+
+}
+.data-patner .col-6{
+    padding:0px !important;
+}
+.store-nav.active .btn-store{
+    border-bottom: 3px solid var(--hijau);
+}
+/* Profil Toko */
+
+/* Slide Banner */
+
+.slide{
+    padding: 0px;
+    overflow: hidden;
+}
+.banner-toko img{
+    width: 100%;
+}
+
+.banner-toko .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    width: 80%;
+    border: none !important;
+    box-shadow: 0.2rem 0.2rem 0.3rem #3333;
+    border-radius: 40px;
+    overflow: hidden;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.banner-toko .swiper-slide:nth-child(1n) {
+    width: 80%;
+}
+
+.banner-toko-utama-bawah{
+    padding: 0px !important;
+}
+
+
+
+/* Slide Banner End */

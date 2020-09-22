@@ -1,0 +1,251 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+<!-- <style>
+  .center {
+    width: 150px;
+    margin: 40px auto;
+
+  }
+</style> -->
+<!-- <div class="center">
+  <p>
+  </p>
+  <div class="input-group">
+    <span class="input-group-btn">
+      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus"
+        data-field="quant[1]">
+        <span class="glyphicon glyphicon-minus"></span>
+      </button>
+    </span>
+    <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+    <span class="input-group-btn">
+      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+        <span class="glyphicon glyphicon-plus"></span>
+      </button>
+    </span>
+  </div>
+  <p></p>
+  <p>
+  </p>
+  <div class="input-group">
+    <span class="input-group-btn">
+      <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[2]">
+        <span class="glyphicon glyphicon-minus"></span>
+      </button>
+    </span>
+    <input type="text" name="quant[2]" class="form-control input-number" value="10" min="1" max="100">
+    <span class="input-group-btn">
+      <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[2]">
+        <span class="glyphicon glyphicon-plus"></span>
+      </button>
+    </span>
+  </div>
+  <p></p>
+  <p>
+  </p>
+  <div class="input-group">
+    <span class="input-group-btn">
+      <button type="button" class="btn btn-danger btn-number" data-type="minus" data-field="quant[3]">
+        <span class="glyphicon glyphicon-minus"></span>
+      </button>
+    </span>
+    <input type="text" name="quant[3]" class="form-control input-number" value="10" min="1" max="100">
+    <span class="input-group-btn">
+      <button type="button" class="btn btn-success btn-number" data-type="plus" data-field="quant[3]">
+        <span class="glyphicon glyphicon-plus"></span>
+      </button>
+    </span>
+  </div>
+  <p></p>
+</div>
+
+<input type="checkbox" onclick="toggle(this);" />Check all?<br />
+
+<input type="checkbox" />Bar 1<br />
+<input type="checkbox" />Bar 2<br />
+<input type="checkbox" />Bar 3<br />
+<input type="checkbox" />Bar 4<br /> -->
+<script>
+//   //plugin bootstrap minus and plus
+//   //http://jsfiddle.net/laelitenetwork/puJ6G/
+//   $('.btn-number').click(function (e) {
+//     e.preventDefault();
+
+//     fieldName = $(this).attr('data-field');
+//     type = $(this).attr('data-type');
+//     var input = $("input[name='" + fieldName + "']");
+//     var currentVal = parseInt(input.val());
+//     if (!isNaN(currentVal)) {
+//       if (type == 'minus') {
+
+//         if (currentVal > input.attr('min')) {
+//           input.val(currentVal - 1).change();
+//         }
+//         if (parseInt(input.val()) == input.attr('min')) {
+//           $(this).attr('disabled', true);
+//         }
+
+//       } else if (type == 'plus') {
+
+//         if (currentVal < input.attr('max')) {
+//           input.val(currentVal + 1).change();
+//         }
+//         if (parseInt(input.val()) == input.attr('max')) {
+//           $(this).attr('disabled', true);
+//         }
+
+//       }
+//     } else {
+//       input.val(0);
+//     }
+//   });
+//   $('.input-number').focusin(function () {
+//     $(this).data('oldValue', $(this).val());
+//   });
+//   $('.input-number').change(function () {
+
+//     minValue = parseInt($(this).attr('min'));
+//     maxValue = parseInt($(this).attr('max'));
+//     valueCurrent = parseInt($(this).val());
+
+//     name = $(this).attr('name');
+//     if (valueCurrent >= minValue) {
+//       $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
+//     } else {
+//       alert('Sorry, the minimum value was reached');
+//       $(this).val($(this).data('oldValue'));
+//     }
+//     if (valueCurrent <= maxValue) {
+//       $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
+//     } else {
+//       alert('Sorry, the maximum value was reached');
+//       $(this).val($(this).data('oldValue'));
+//     }
+
+
+//   });
+//   $(".input-number").keydown(function (e) {
+//     // Allow: backspace, delete, tab, escape, enter and .
+//     if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+//       // Allow: Ctrl+A
+//       (e.keyCode == 65 && e.ctrlKey === true) ||
+//       // Allow: home, end, left, right
+//       (e.keyCode >= 35 && e.keyCode <= 39)) {
+//       // let it happen, don't do anything
+//       return;
+//     }
+//     // Ensure that it is a number and stop the keypress
+//     if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+//       e.preventDefault();
+//     }
+//   });
+// </script>
+// <script>
+//   function toggle(source) {
+//     var checkboxes = document.querySelectorAll('input[type="checkbox"]');
+//     for (var i = 0; i < checkboxes.length; i++) {
+//         if (checkboxes[i] != source)
+//             checkboxes[i].checked = source.checked;
+//     }
+// }
+</script>
+<!-- <ul>
+  <li><input type="checkbox" id="select_all"/> Selecct All</li>
+  <li><input class="checkbox" type="checkbox" name="check[]"> This is Item 1</li>
+  <li><input class="checkbox" type="checkbox" name="check[]"> This is Item 2</li>
+  <li><input class="checkbox" type="checkbox" name="check[]"> This is Item 3</li>
+  <li><input class="checkbox" type="checkbox" name="check[]"> This is Item 4</li>
+  <li><input class="checkbox" type="checkbox" name="check[]"> This is Item 5</li>
+  <li><input class="checkbox" type="checkbox" name="check[]"> This is Item 6</li>
+</ul>
+
+<script>
+var select_all = document.getElementById("select_all"); //select all checkbox
+var checkboxes = document.getElementsByClassName("checkbox"); //checkbox items
+
+//select all checkboxes
+select_all.addEventListener("change", function(e){
+	for (i = 0; i < checkboxes.length; i++) { 
+		checkboxes[i].checked = select_all.checked;
+	}
+});
+
+
+for (var i = 0; i < checkboxes.length; i++) {
+	checkboxes[i].addEventListener('change', function(e){ //".checkbox" change 
+		//uncheck "select all", if one of the listed checkbox item is unchecked
+		if(this.checked == false){
+			select_all.checked = true;
+		}
+		//check "select all" if all checkbox items are checked
+		if(document.querySelectorAll('.checkbox:checked').length == checkboxes.length){
+			select_all.checked = true;
+		}
+	});
+} -->
+</script>
+
+<table border="10" width="900" bordercolor="green">
+  <tr> 
+      <td colspan="3"  style="background-color:#7F77AE">DNA</td> 
+      <td><input type="checkbox" name="check_list[]" value="value 1">seq</td> 
+      <td><input type="checkbox" name="check_list[]" value="value 2">codon</td>
+      <td><input type="checkbox" onclick="checkAll(this)" id="all">Select_all</td> 
+  </tr> 
+  <tr> 
+      <td colspan="3"  style="background-color:#7F77AE">RNA</td> 
+      <td><input type="checkbox" name="check_list[]" value="value 3">seq</td> 
+      <td><input type="checkbox" name="check_list[]" value="value 4">codon</td> 
+      <td><input type="checkbox" onclick="checkAll(this)" id="all">Select_all</td> 
+  </tr> 
+</table> 
+<ul>
+  <li><input type="checkbox" id="select_all"/> Selecct All</li>
+  <li><input class="checkbox" type="checkbox" name="check[]"> This is Item 1</li>
+  <li><input class="checkbox" type="checkbox" name="check[]"> This is Item 2</li>
+  <li><input class="checkbox" type="checkbox" name="check[]"> This is Item 3</li>
+  <li><input class="checkbox" type="checkbox" name="check[]"> This is Item 4</li>
+  <li><input class="checkbox" type="checkbox" name="check[]"> This is Item 5</li>
+  <li><input class="checkbox" type="checkbox" name="check[]"> This is Item 6</li>
+</ul>
+</body>
+
+</html>
+<script type="text/javascript">
+var sall = document.getElementById("all"); //select all checkbox
+
+function checkAll(bx) {
+  var cbs = $( bx ).closest( 'tr' ).find( 'input:checkbox' );
+  for(var i=0; i < cbs.length; i++) {
+      if(cbs[i].type == 'checkbox') {
+          cbs[i].checked = bx.checked;
+      }
+  }
+}
+
+var select_all = document.getElementById("select_all"); //select all checkbox
+var checkboxes = document.getElementsByClassName("checkbox"); //checkbox items
+
+//select all checkboxes
+select_all.addEventListener("change", function(e){
+	for (i = 0; i < checkboxes.length; i++) { 
+		checkboxes[i].checked = select_all.checked;
+	}
+});
+
+
+for (var i = 0; i < checkboxes.length; i++) {
+	checkboxes[i].addEventListener('change', function(e){ //".checkbox" change 
+		//uncheck "select all", if one of the listed checkbox item is unchecked
+		if(this.checked == false){
+			select_all.checked = false;
+		}
+		//check "select all" if all checkbox items are checked
+		if(document.querySelectorAll('.checkbox:checked').length == checkboxes.length){
+			select_all.checked = true;
+		}
+	});
+}
+</script>

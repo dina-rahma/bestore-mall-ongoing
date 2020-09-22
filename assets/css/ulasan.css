@@ -1,0 +1,204 @@
+:root {
+    --putih: #FFFF;
+    --kuning: #F9C032;
+    --hijau: #46715E;
+    --SF-Compact-Black : SF-Compact-Black;
+    --SF-Compact-Blod : SF-Compact-Bold;
+    --SF-Compact-Ultralight : SF-Compact-Ultralight;
+    --NewYorkLarge-Regular : NewYorkLarge-Regular;
+    --NewYorkLarge-Black : NewYorkLarge-Black;
+    --NewYorkMedium-Regular : NewYorkMedium-Regular;
+}
+
+body{
+    background-color: #F4F4F4 !important;
+}
+
+.c-k{color: var(--kuning);} .c-h{color: var(--hijau);}
+
+h4{
+    font-family: var(--SF-Compact-Black);
+    color: var(--hijau);
+}
+
+h5{
+    font-family: var(--SF-Compact-Blod);
+}
+
+h6{
+    font-family: var(--SF-Compact-Ultralight);
+    color: var(--hijau);
+    margin: 0px;
+}
+
+
+
+.d-checkout .nav-top{
+    background-color: var(--putih) !important;
+    padding: 0px !important;
+    z-index: 997;
+    transition: 1000ms;
+}
+
+.d-checkout .nav-top.active{
+    transition: 1000ms;
+    background-color: var(--putih) !important;
+}
+
+.d-checkout .nav-top h5{
+    font-family: var(--SF-Compact-Black) !important;
+
+}
+
+.head-ulasan{
+    background-color: var(--putih);
+}
+
+.head-ulasan .rating{
+    background-color: var(--putih);
+}
+
+.rate-text{
+    font-family: var(--SF-Compact-Ultralight);
+    color: #333;
+}
+
+.rate-start{
+    padding: 0px;
+}
+
+.progress{
+    margin-top: 9px ;
+    height: 7px !important;
+}
+
+/* Slide */
+/* Button Slide */
+.slide-button .slide-button{
+    padding: 0px;
+}
+.slide-button .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+.slide-button .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* width: 80%; */
+    width: auto !important;
+    overflow: hidden;
+    border-radius: 20px;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+/* Slide */
+/* Slide */
+/* ulasan foto */
+.card-ulasan .slide-button .slide-button{
+    padding: 0px;
+}
+.card-ulasan .slide-button .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+.card-ulasan .slide-button .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* width: 80%; */
+    /* width: auto !important; */
+    overflow: hidden;
+    border-radius: 20px;
+    
+    background: #000 !important;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.card-ulasan .swiper-slide:nth-child(1n) {
+    width: 27%;
+}
+/* Slide */
+
+/* BUtton */
+.btn-like{
+    font-family: var(--SF-Compact-Ultralight);
+    font-size: 12px;
+    width: 100%;
+}
+.btn-rating{
+    font-family: var(--SF-Compact-Ultralight);
+    font-size: 14px;
+    width: auto;
+    /* padding: px; */
+    background-color: putih;
+    border: 2px solid #3333;
+    border-radius: 20px;
+}
+/* BUtton */
+
+/* Card Ulasan  */
+.card-ulasan{
+    background-color: var(--putih);
+    border-radius: 7px;
+    box-shadow: 0rem 0rem 0.4rem #7777;
+}
+
+.top{
+    line-height: 17px;
+}
+.nama-pengulas{
+    font-family: var(--SF-Compact-Ultralight);
+    font-size: 14px;
+    color: #333;
+}
+
+.waktu-pengulas{
+    font-family: var(--SF-Compact-Ultralight);
+    font-size: 12px;
+    color: #777;
+}
+
+.deskripsi p{
+    font-size: 12px;
+    color: #333;
+    line-height: 16px;
+}
+
+.d-like{
+    padding: 0px;
+}
+
+.card-ulasan .frame-img-ulasan{
+    /* background-color: var(--kuning); */
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid #7777;
+}
+/* Card Ulasan  */

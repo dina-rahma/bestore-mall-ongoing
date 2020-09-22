@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="38.3333mm" height="38.3333mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 1454 1454"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#426A5A;stroke-width:17.1714}
+    .str1 {stroke:#426A5A;stroke-width:17.1714;stroke-linecap:round;stroke-linejoin:round}
+    .fil0 {fill:none}
+    .fil3 {fill:#426A5A}
+    .fil2 {fill:#658C7C}
+    .fil4 {fill:white}
+    .fil1 {fill:#426A5A;fill-rule:nonzero}
+    .fil5 {fill:white;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" width="1454" height="1454"/>
+  <path class="fil1" d="M639 926l180 0 29 211 -238 0 29 -211zm90 0m104 106m-104 105m-105 -105"/>
+  <path class="fil2" d="M219 422l1015 0 0 556c0,24 -19,43 -43,43l-928 0c-24,0 -44,-19 -44,-43l0 -556z"/>
+  <path class="fil3" d="M288 300l878 0c38,0 68,31 68,69l0 547 -1015 0 0 -547c0,-38 31,-69 69,-69z"/>
+  <circle class="fil3" cx="727" cy="968" r="30"/>
+  <rect class="fil4" x="290" y="361" width="875" height="494" rx="9" ry="9"/>
+  <rect class="fil3" x="473" y="1125" width="512.683" height="28.9506" rx="18" ry="14"/>
+  <g id="_238298896">
+   <rect class="fil0 str0" x="547" y="572" width="363" height="221"/>
+   <path class="fil0 str0" d="M609 793l76 0 0 -161c0,-4 -3,-7 -8,-7l-60 0c-4,0 -8,3 -8,7l0 161z"/>
+   <rect class="fil0 str0" x="726" y="625" width="146.898" height="83.2918" rx="6" ry="6"/>
+   <rect class="fil3" transform="matrix(0.596883 0.360455 -0.516946 0.856018 760.893 636.394)" width="9.08713" height="43.9211" rx="5" ry="5"/>
+   <rect class="fil3" transform="matrix(0.596883 0.360455 -0.320888 0.531363 764.689 648.417)" width="9.08713" height="43.9211" rx="5" ry="5"/>
+   <circle class="fil3" cx="665" cy="709" r="6"/>
+   <rect class="fil0 str0" x="528" y="433" width="401.327" height="30.0157" rx="16" ry="15"/>
+   <path class="fil5 str1" d="M543 463l368 0 28 126 -424 0 28 -126zm184 0m198 63m-198 63m-198 -63"/>
+   <rect class="fil3" x="716" y="463" width="21.6085" height="125.997"/>
+   <rect class="fil3" x="675" y="463" width="21.6085" height="125.997"/>
+   <rect class="fil3" transform="matrix(0.171474 0.00299309 -0.0174524 0.999848 635.809 462.945)" width="126" height="126"/>
+   <rect class="fil3" transform="matrix(0.171265 0.00897563 -0.052336 0.99863 597.313 462.645)" width="126" height="126"/>
+   <rect class="fil3" transform="matrix(0.170848 0.0149472 -0.0871557 0.996195 558.826 462.422)" width="126" height="126"/>
+   <rect class="fil3" x="757" y="463" width="21.6085" height="125.997"/>
+   <rect class="fil3" transform="matrix(0.171474 -0.00299309 0.0174524 0.999848 796.437 463.322)" width="126" height="126"/>
+   <rect class="fil3" transform="matrix(0.171265 -0.00897563 0.052336 0.99863 834.959 463.776)" width="126" height="126"/>
+   <rect class="fil3" transform="matrix(0.170848 -0.0149472 0.0871557 0.996195 873.498 464.305)" width="126" height="126"/>
+  </g>
+ </g>
+</svg>

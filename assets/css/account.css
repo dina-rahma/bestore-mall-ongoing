@@ -1,0 +1,140 @@
+:root {
+    --putih: #FFFF;
+    /* --kuning: #E5A72E; */
+    --kuning: #F9C032;
+    --hijau: #46715E;
+    --SF-Compact-Black : SF-Compact-Black;
+    --SF-Compact-Blod : SF-Compact-Bold;
+    --SF-Compact-Ultralight : SF-Compact-Ultralight;
+    --NewYorkLarge-Regular : NewYorkLarge-Regular;
+    --NewYorkLarge-Black : NewYorkLarge-Black;
+    --NewYorkMedium-Regular : NewYorkMedium-Regular;
+}
+
+.c-k{color: var(--kuning);} .c-h{color: var(--hijau);}
+
+h4{
+    font-family: var(--SF-Compact-Black);
+    color: var(--hijau);
+}
+
+h5{
+    font-family: var(--SF-Compact-Blod);
+}
+
+h6{
+    font-family: var(--SF-Compact-Black);
+    color: var(--putih);
+}
+
+.d-account{
+    overflow: hidden !important;
+}
+
+.d-account .nav-top{
+    /* background-color: var(--kuning) !important; */
+    padding: 0px !important;
+    z-index: 997;
+    transition: 1000ms;
+    color: var(--hijau) !important;
+}
+
+.d-account .nav-top.active{
+    transition: 1000ms;
+    background-color: var(--hijau) !important;
+}
+
+.d-account .nav-top h5{
+    font-family: var(--SF-Compact-Black) !important;
+    color: var(--hijau);
+}
+
+
+/* Button */
+.btn-back svg{
+    fill: var(--hijau);
+}
+/* Button */
+
+/* Top Img */
+.top-img{
+    /* background-color: var(--kuning); */
+    width: 100%;
+    height: 8vh;
+}
+
+.r-nav{
+    height: 8vh;
+}
+
+.top-nav{
+    border-bottom: 2px solid #FAFAFA;
+}
+
+.top-nav.active{
+    border-bottom: 2px solid var(--hijau);
+}
+
+.top-nav a{
+    font-family: var(--SF-Compact-Blod);
+    color: var(--hijau);
+}
+/* Top Img */
+
+/* PRofil */
+.profil-status{
+    position: absolute;
+    top:18vh;
+    background-color: var(--putih) !important;
+    box-shadow: 0.1rem 0rem 0.3rem #7777;
+    padding: 30px 0px;
+    border-radius: 15px;
+}
+
+.profil-status .d-user{
+    line-height: 20px !important;
+}
+
+.profil-status .id-status{
+    font-size: 14px;
+    line-height: 3px;
+}
+
+.profil-status .ket{
+    font-size: 10px;
+}
+
+.profil-status .frame-img{
+    border-radius: 10px;
+    overflow: hidden;
+    background: #000;
+}
+
+.d-account .data-diri{
+    margin-top: 25vh;
+    margin-bottom: 13vh;
+}
+
+.d-account .data-diri h5{
+    font-size: 14px !important;
+}
+
+.d-account .data-diri h6{
+    text-align: right;
+    font-size: 14px;
+    font-family: var(--SF-Compact-Ultralight);
+    color: #777 !important;
+}
+/* PRofil */
+
+/* Button */
+.btn-edit{
+    background-color: #FAFAFA;
+    border-radius: 5px;
+    border: 2px solid var(--hijau);
+    width: 100%;
+    font-family: var(--SF-Compact-Blod);
+    font-size: 14px;
+    color: var(--hijau);
+}
+/* Button */

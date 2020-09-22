@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes">
+    <style>
+        /* Youtube */
+        .youtube-player {
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            cursor: pointer;
+        }
+
+        .youtube-player img {
+            width: 100%;
+        }
+
+        .youtube-player.pristine::before {
+            content: '';
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            margin-top: -15px;
+            margin-left: -25px;
+            height: 0;
+            width: 0;
+            border-left: 50px solid yellow;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            transition: opacity .2s ease;
+        }
+
+        .youtube-player.pristine:hover::before {
+            opacity: .7;
+        }
+
+        .frame-img img {
+            width: 100%;
+        }
+
+        .frame-img.pristine::before {
+            content: '';
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            margin-top: -15px;
+            margin-left: -25px;
+            height: 0;
+            width: 0;
+            border-left: 50px solid yellow;
+            border-top: 30px solid transparent;
+            border-bottom: 30px solid transparent;
+            transition: opacity .2s ease;
+        }
+
+        .frame-img.pristine:hover::before {
+            opacity: .7;
+        }
+
+        .frame-img {
+            position: relative;
+            width: 100%;
+            height: auto;
+            margin: auto;
+            cursor: pointer;
+            transition: 1000ms;
+        }
+
+        /* Youtube */
+    </style>
+</head>
+
+<body>
+    <!-- 1. The <iframe> (video player) will replace this <div> tag. -->
+    <div class="frame-img pristine" id="frame">
+        <img src="../img/product/official/kursi-dummy.png" class="thumbnail" width="100%" alt="custom-preview">
+    </div>
+    <div id="player"></div>
+    <!-- <div class="youtube-player pristine" data-video-id="R5uujNPBZBk">
+        <img src="../img/product/official/kursi-dummy.png" alt="custom-preview">
+    </div> -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
+    <script>
+        var player;
+          function onYouTubeIframeAPIReady() {
+            player = new YT.Player('player', {
+              width: '100%',
+              videoId: 'R5uujNPBZBk',
+              playerVars: { 'autoplay': 1, 'playsinline': 1 },
+              events: {
+                'onReady': onPlayerReady
+              }
+            });
+          }
+
+        // 4. The API will call this function when the video player is ready.
+        function onPlayerReady(event) {
+            event.target.mute();
+            event.target.playVideo();
+        }
+
+        var myEl = document.getElementById('frame');
+
+        myEl.addEventListener('click', function () {
+            // alert('Hello world');
+            var thumb = document.getElementById('frame');
+            thumb.parentNode.removeChild(thumb);
+            var tag = document.createElement('script');
+
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        }, false);
+
+    </script>
+    <script>
+        // // 2. This code loads the IFrame Player API code asynchronously.
+        // // var tag = document.createElement('script');
+
+        // // tag.src = "https://www.youtube.com/iframe_api";
+        // // var firstScriptTag = document.getElementsByTagName('script')[0];
+        // // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // // 3. This function creates an <iframe> (and YouTube player)
+        // //    after the API code downloads.
+        // var player;
+        //   function onYouTubeIframeAPIReady() {
+        //     player = new YT.Player('player', {
+        //       width: '100%',
+        //       videoId: 'R5uujNPBZBk',
+        //     //   playerVars: { 'autoplay': 1, 'playsinline': 1 }
+        //     //   events: {
+        //     //     'onReady': onPlayerReady
+        //     //   }
+        //     });
+        //   }
+
+        // // 4. The API will call this function when the video player is ready.
+        // function onPlayerReady(event) {
+        //     event.target.mute();
+        //     event.target.playVideo();
+        // }
+
+        // // $(document).ready(function () {
+
+        // //     $('.pristine').on('click', function () {
+        // //         // $('#sidebar').addClass('active');
+        // //         // $('.overlay').addClass('active');
+        // //         $('.frame-img').remove();
+        // //     });
+        // // });
+
+        // var myEl = document.getElementById('frame');
+
+        // myEl.addEventListener('click', function () {
+        //     alert('Hello world');
+        //     var thumb = document.getElementById('frame');
+        //     thumb.parentNode.removeChild(thumb);
+        //     var tag = document.createElement('script');
+
+        //     tag.src = "https://www.youtube.com/iframe_api";
+        //     var firstScriptTag = document.getElementsByTagName('script')[0];
+        //     firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+        // }, false);
+
+        // // myEl.addEventListener('click', function () {
+        // //     alert('Hello world again!!!');
+        // // }, false);
+
+
+
+
+        // //Youtube Video Product
+        // // var players = document.querySelectorAll('.youtube-player')
+
+        // // var loadPlayer = function (event) {
+        // //     var target = event.currentTarget
+        // //     var iframe = document.createElement('iframe')
+
+        // //     iframe.height = target.clientHeight
+        // //     iframe.width = target.clientWidth
+        // //     iframe.src = 'https://www.youtube.com/embed/' + target.dataset.videoId + '?autoplay=1'
+        // //     iframe.setAttribute('frameborder', 0)
+
+        // //     target.classList.remove('pristine')
+
+        // //     if (target.children.length) {
+        // //         target.replaceChild(iframe, target.firstElementChild);
+        // //     } else {
+        // //         target.appendChild(iframe)
+        // //     }
+        // // }
+
+        // // var config = {
+        // //     once: false
+        // // }
+
+        // // Array.from(players).forEach(function (player) {
+        // //     player.addEventListener('click', loadPlayer, config)
+        // // });
+    </script>
+    <script>
+        // // Youtube AutoPlay
+        // var tag = document.createElement('script');
+
+        // tag.src = "https://www.youtube.com/iframe_api";
+        // var firstScriptTag = document.getElementsByTagName('script')[0];
+        // firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+        // // 3. This function creates an <iframe> (and YouTube player)
+        // //    after the API code downloads.
+        // var player;
+        // function onYouTubeIframeAPIReady() {
+        // player = new YT.Player('player', {
+        //     width: '100%',
+        //     videoId: 'R5uujNPBZBk',
+        //     playerVars: { 'autoplay': 1, 'playsinline': 1 },
+        //     events: {
+        //     'onReady': onPlayerReady
+        //     }
+        // });
+        // }
+
+        // // 4. The API will call this function when the video player is ready.
+        // function onPlayerReady(event) {
+        // event.target.mute();
+        // // event.target.playVideo(); //ini untuk autoplay
+        // }
+
+        // //Youtube Video Product
+        // var players = document.querySelectorAll('.youtube-player')
+
+        // var loadPlayer = function (event) {
+        //     var target = event.currentTarget
+        //     var iframe = document.createElement('iframe')
+
+        //     iframe.height = target.clientHeight
+        //     iframe.width = target.clientWidth
+        //     iframe.src = 'https://www.youtube.com/embed/' + target.dataset.videoId + '?autoplay=1'
+        //     iframe.setAttribute('frameborder', 0)
+
+        //     target.classList.remove('pristine')
+
+        //         if (target.children.length) {
+        //             target.replaceChild(iframe, target.firstElementChild)
+        //         } else {
+        //             target.appendChild(iframe)
+        //         }
+        // }
+
+        // var config = {
+        //     once: true
+        // }
+
+        // Array.from(players).forEach(function (player) {
+        //     player.addEventListener('click', loadPlayer, config)
+        // });
+    </script>
+</body>
+
+</html>

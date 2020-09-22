@@ -1,0 +1,396 @@
+:root {
+    --putih: #FFFF;
+    --kuning: #F9C032;
+    --hijau: #46715E;
+    --SF-Compact-Black : SF-Compact-Black;
+    --SF-Compact-Blod : SF-Compact-Bold;
+    --SF-Compact-Ultralight : SF-Compact-Ultralight;
+    --NewYorkLarge-Regular : NewYorkLarge-Regular;
+    --NewYorkLarge-Black : NewYorkLarge-Black;
+    --NewYorkMedium-Regular : NewYorkMedium-Regular;
+}
+
+.c-k{color: var(--kuning);}.c-h{color: var(--hijau);}
+
+h4{
+    font-family: var(--SF-Compact-Black);
+    color: var(--hijau);
+}
+
+h5{
+    font-size: 18px !important;
+    font-family: var(--SF-Compact-Ultralight);
+    color: var(--hijau);
+}
+
+h6{
+    font-family: var(--SF-Compact-Black);
+    color: #777;
+}
+
+.d-detail-product .nav-top{
+    background-color: var(--putih) !important;
+    padding: 0px !important;
+    z-index: 997;
+    transition: 1000ms;
+}
+
+.d-detail-product .nav-top.active{
+    transition: 1000ms;
+    background-color: var(--putih) !important;
+}
+
+
+/* Button */
+.d-detail-product .notif svg{
+    fill:var(--hijau) !important;
+}
+.d-detail-product .btn-bar {
+    color: var(--hijau);
+}
+.d-detail-product .btn-bar:hover{
+    color: var(--hijau);
+}
+.d-detail-product .btn-bar:active{
+    color: var(--hijau);
+}
+
+.btn-addcart{
+    color: var(--putih);
+    background-color: var(--kuning);
+    width: 100%;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+
+.btn-checkout{
+    color: var(--putih);
+    background-color: var(--hijau);
+    width: 100%;
+    font-size: 12px;
+    border-radius: 2px;
+    padding: 5px 10px;
+}
+/* Button */
+
+/* Search */
+.d-detail-product .search input{
+    font-size: 16px;
+    padding: 10px;
+    border-top-left-radius: 40px !important;
+    border-bottom-left-radius: 40px !important;
+    /* border: 2px solid #777 !important; */
+    border-top: 2px solid #777 !important;
+    border-bottom: 2px solid #777 !important;
+    border-left: 2px solid #777 !important;
+}
+.d-detail-product .search .input-group-text{
+    background-color: var(--putih);
+    border-top-right-radius: 40px !important;
+    border-bottom-right-radius: 40px !important;
+    border-right: 2px solid #777 ;
+    border-top: 2px solid #777 ;
+    border-left: none;
+    border-bottom: 2px solid #777 ;
+}
+
+.btn-wishlist{
+    z-index: 995 !important;
+}
+/* Search */
+
+/* Profil Toko */
+
+.profil-toko{
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.profil-toko .frame-img{
+    box-shadow: 0.1rem 0.3rem 0.3rem #7777;
+    border-radius: 100px;
+    width: 70px;
+    height: 70px;
+    overflow: hidden;
+}
+
+.d-profil{
+    padding-top: 0px;
+}
+
+.data-patner .nama-toko{
+    /* line-height: 0px; */
+}
+
+.data-patner span{
+    font-size: 10px;
+}
+
+
+.store-nav{
+    padding: 0px 2px;
+}
+.store-nav .btn-store{
+    border-bottom: 3px solid #777;
+    padding: 0px;
+
+}
+.data-patner .col-6{
+    padding:0px !important;
+}
+.store-nav.active .btn-store{
+    border-bottom: 3px solid var(--hijau);
+}
+/* Profil Toko */
+
+/* Slide Banner */
+.gallery-top {
+    width: 100%;
+}
+
+.gallery-top .swiper-wrapper{
+    padding: 10px 0px;
+}
+.wishlist{
+    fill: #777 !important;
+}
+.wishlist.active{
+    fill: pink !important;
+}
+.gallery-top .swiper-wrapper .swiper-slide{
+}
+
+.gallery-thumbs {
+    height: 20%;
+    box-sizing: border-box;
+}
+
+.gallery-thumbs .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.4;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0.2rem 0.2rem 0.4rem #7777;
+  }
+
+  .gallery-thumbs .swiper-slide-thumb-active {
+    opacity: 1;
+}
+
+.gallery-thumbs .swiper-wrapper{
+    padding: 10px 30px;
+}
+
+.swiper-pagination-product{
+    width: 100%;
+    /* background-color: var(--hijau) !important; */
+    color: #777 !important;
+    text-align: center;
+}
+.swiper-pagination-product span{
+    background-color: var(--hijau) !important;
+    margin: 0px 5px !important;
+}
+
+
+.slide{
+    padding: 0px;
+    overflow: hidden;
+}
+.banner-toko img{
+    width: 100%;
+}
+
+.banner-toko .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    width: 80%;
+    border: none !important;
+    box-shadow: 0.2rem 0.2rem 0.3rem #3333;
+    border-radius: 40px;
+    overflow: hidden;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.banner-toko .swiper-slide:nth-child(1n) {
+    width: 80%;
+}
+
+.banner-toko-utama-bawah{
+    padding: 0px !important;
+}
+
+
+/* Slide Banner End */
+
+/* Video */
+.frame-img{
+    padding: 0px !important;
+}
+/* Video */
+
+/* Deskripsi Product */
+.rate-text{
+    font-size: 12px;
+    font-family: var(--SF-Compact-Ultralight);
+    color: #777;
+}
+.rate-text strong{
+    font-size: 12px;
+    font-family: var(--SF-Compact-Black);
+    color: #777;
+}
+
+.size-option .form-group select{
+    font-size: 10px;
+    /* padding: 0px; */
+    height: 30px !important;
+}
+
+.deskripsi-detail{
+    color: #777;
+}
+
+.deskripsi-detail p{
+    font-size: 14px !important;
+    color: #777;
+}
+
+.product{
+    background-color: #F6F6F6 !important;
+    padding: 30px 0px;
+}
+/* Deskripsi Product */
+/* Youtube */
+.frame-img {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    cursor: pointer;
+  }
+  
+  .frame-img img {
+    width: 100%;
+  }
+  
+  .frame-img.pristine::before {
+    content: '';
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    margin-top: -15px;
+    margin-left: -25px;
+    height: 0;
+    width: 0;
+    border-left: 50px solid var(--kuning);
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    transition: opacity .2s ease;
+  }
+  
+  .frame-img.pristine:hover::before {
+    opacity: .7;
+  }
+
+  .thumb-video{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    cursor: pointer;
+  }
+  .thumb-video.pristine::before {
+    content: '';
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    margin-top: -15px;
+    margin-left: -25px;
+    height: 0;
+    width: 0;
+    border-left: 40px solid var(--kuning);
+    border-top: 20px solid transparent;
+    border-bottom: 20px solid transparent;
+    transition: opacity .2s ease;
+  }
+  
+  .thumb-video.pristine:hover::before {
+    opacity: .7;
+  }
+/* Youtube */
+
+/* Card Ulasan */
+
+.card-ulasan a{
+    font-family: var(--SF-Compact-Blod);
+    font-family: 12px;
+    color: var(--hijau);
+}
+.text-kecil{
+    font-family: var(--SF-Compact-Ultralight);
+    font-size: 10px;
+    color: #777;
+}
+/* Slide */
+/* ulasan foto */
+.card-ulasan .slide-button .slide-button{
+    padding: 0px;
+}
+.card-ulasan .slide-button .swiper-container {
+    width: 100%;
+    height: 100%;
+  }
+
+.card-ulasan .slide-button .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    /* width: 80%; */
+    /* width: auto !important; */
+    overflow: hidden;
+    border-radius: 20px;
+    
+    background: #000 !important;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.card-ulasan .swiper-slide:nth-child(1n) {
+    width: 27%;
+}
+/* Slide */
+.card-ulasan .frame-img-ulasan{
+    /* background-color: var(--kuning); */
+    border-radius: 7px;
+    overflow: hidden;
+    border: 1px solid #7777;
+}
+/* Card Ulasan */
