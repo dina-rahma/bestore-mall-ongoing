@@ -218,7 +218,7 @@
                                                             </g>
                                                         </g>
                                                     </svg>
-                                                    0</span>
+                                                    <a href="https://api.whatsapp.com/send?phone=62<?php echo $rowToko['no_telp']; ?>" target="_blank"><?php echo $rowToko['no_telp']; ?></span>
                                             </div>
                                         </div>
                                         <div class="row">
